@@ -1,0 +1,444 @@
+* {margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior:smooth;
+    scrollbar-width:none
+}
+
+#cover {
+    background-image: url(../img/cover.png), url(../img/ornamentflower.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 110vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: papyrus;
+    font-weight: bold;
+    line-height: 1.25;
+
+}
+
+#covimgleft {
+    position: fixed;
+    bottom: -3vh;
+    left: -3vh;
+    transform: rotate(20deg);
+    filter: drop-shadow( 5px 0px 1px #3a1f00 );
+    width: 110px;
+    z-index: 1;
+}
+
+#covimgright {
+    position: fixed;
+    bottom: -3vh;
+    right: -3vh;
+    transform: rotate(-20deg);
+    filter: drop-shadow( -5px 0px 1px #3a1f00 );
+    width: 110px;
+    z-index: 1;
+}
+
+#buttoncover {
+    background-color: rgb(255, 189, 66);
+    margin-top: 25px;
+    padding: 15px 35px;
+    border: none;
+    color: #ffffff;
+    font-size:medium;
+    font-family: papyrus;
+    
+}
+
+#buttoncover:hover{
+    background-color: rgb(241, 162, 13) ;
+}
+
+#quotes{
+    background-image: url(../img/paper.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#quotes button {
+    position: fixed;
+    top: 1vh;
+    right: 1vh;
+    z-index: 3;
+    background-color:transparent;
+    border: none;
+    font-size: x-large;
+    filter: drop-shadow(2px 2px 1px #000);
+}
+
+#quotes p {
+    position: relative;
+    font-size: large;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    filter: drop-shadow(0px 0px 5px #000);
+}
+
+#quotes div {
+    position: relative;
+}
+
+#quotornament1 {
+    display: inline-block;
+    position: absolute;
+    left: -60vw;
+    top: -45vh;
+    width: 200px;
+    z-index: 0;
+}
+
+#quotornament2 {
+    display: inline-block;
+    position: absolute;
+    right: -60vw;
+    top: -40vh;
+    width: 200px;
+    filter: sepia( 10%);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0vh;
+    background-color: #ffa42c;
+    padding: 10px;
+    width: 100%; 
+    z-index: 3;
+    filter: drop-shadow(10px 0px 10px #000);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 5px;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #ffa42c;
+    border-radius: 2px; 
+}
+
+#profile {
+    background-image: url(../img/Profile.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.profile_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+#profile img {
+    width: 25vh;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px 1px #000;    
+}
+
+#profile p {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+#profile a {
+    color: #ffae00;
+}
+#profile a:hover {
+    color: #ffffff;
+}
+
+#time{
+    background-image: url(../img/leafbg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#time h1 {
+    font-size: 400%;
+}
+
+#time p {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: #ffae00;
+    bottom: 4px;
+    font-size: 120%;
+    font-weight: bolder;
+    padding: 5px;
+    margin: 0;
+}
+
+#loc{
+    background-image: url(../img/leafbg2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loc p {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: #ffae00;
+    bottom: 4px;
+    font-size: 120%;
+    font-weight: bolder;
+    padding: 5px;
+    margin: 0;
+}
+
+#loc a {
+    color: #ffae00;
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 10%;
+    text-decoration: none;
+}
+
+#loc h2 {
+    font-size: 350%;
+    position: relative;
+}
+
+#loc h3 {
+    font-size: 150%;
+}
+
+#gallery{
+    font-family: 'papyrus';
+    background-color: hsl(29, 100%, 50%);
+    background-image: url(../img/paper2.jpg);
+    background-blend-mode: overlays;
+    background-size: cover;
+    background-position:center;
+    height: 200vh;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    #gallery {height: 300vh;}
+}
+
+#gallery img {
+    width: 40%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10%;
+    filter: drop-shadow(2px 2px 1px #000);
+}
+
+#gallery video {
+    border: dotted;
+    border-color: #ffae00;
+}
+
+#vip{
+    background-image: url(../img/people.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #00000060;
+    background-blend-mode: overlay;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+
+}
+
+table{
+    margin-top: 10px;
+    background-color: #ffa42c;
+    width: 90%;
+    height: 50%;
+    border-collapse: collapse;
+    filter: drop-shadow(0px 0px 10px #000);
+
+}
+
+th{
+    background-color: rgb(243, 138, 18) ;
+    padding: 5px;
+}
+
+td {
+    width: 50%;
+    filter: drop-shadow(10px 0px 1px #0000);
+}
+
+.abs {
+    background-color: #ffaf47;
+}
+
+#rsvp{
+    background-image: url(../img/rsvp.jpg);
+    background-color: #0000005e;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rsvp h2 {
+    padding: 2vh;
+    font-family: 'papyrus';
+}
+
+#story{
+    background-image: url(../img/story.jpg);
+    background-color: #693c009a;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#story p {
+    position: relative;
+    top: 10%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: large;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 2px #000);
+}
+
+#story img {
+    width: 25vh;
+    filter: brightness(80%) sepia(40%);
+    z-index: 0;
+    position: relative;
+    top: 9vh;
+    left: 30vw;
+    rotate: 10deg;
+}
+
+#gifts{
+    font-family: 'papyrus';
+    background-image: url(../img/gifts.jpg);
+    background-color: #9454008c;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gifts h2 {
+    padding: 3vh;
+}
+
+#gifts img {
+    border-radius: 20%;
+}
+
+#message{
+    background-image: url(../img/message.jpg);
+    background-color: #46270094;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#end{
+    background-image: url(../img/quotes.png);
+    font-family: 'papyrus';
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
